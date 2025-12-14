@@ -18,6 +18,6 @@
 <style>
     .main {
         min-height: calc(100vh - 200px);
-        padding: 0 0 2rem;
+        padding: 0 0 3rem;
     }
 </style>
