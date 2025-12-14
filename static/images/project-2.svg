@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Project placeholder 2">
+  <defs>
+    <linearGradient id="g" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8e6c9" />
+      <stop offset="1" stop-color="#1b5e20" stop-opacity="0.16" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="26" fill="url(#g)" />
+  <path d="M70 390c120-160 250-230 390-210 140 20 260 120 360 300H70V390z" fill="#2e7d32" fill-opacity="0.12"/>
+  <text x="60" y="290" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="34" font-weight="800" fill="#1b5e20">Project 2</text>
+  <text x="60" y="335" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" fill="#0f1b10" fill-opacity="0.7">Placeholder image</text>
+</svg>

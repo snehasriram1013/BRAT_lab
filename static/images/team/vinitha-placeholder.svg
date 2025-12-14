@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Placeholder portrait">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e7d32" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#1b5e20" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="256" fill="#c8e6c9" />
+  <circle cx="256" cy="210" r="96" fill="url(#g)" fill-opacity="0.55" />
+  <path d="M120 438c30-92 94-138 136-138s106 46 136 138" fill="url(#g)" fill-opacity="0.35" />
+  <text x="256" y="482" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="700" fill="#1b5e20">Director (placeholder)</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Project placeholder 3">
+  <rect width="960" height="540" rx="26" fill="#ffffff" fill-opacity="0.7" />
+  <rect x="20" y="20" width="920" height="500" rx="22" fill="#c8e6c9" fill-opacity="0.85" stroke="#1b5e20" stroke-opacity="0.18"/>
+  <rect x="70" y="110" width="820" height="30" rx="15" fill="#2e7d32" fill-opacity="0.18"/>
+  <rect x="70" y="160" width="620" height="18" rx="9" fill="#1b5e20" fill-opacity="0.12"/>
+  <rect x="70" y="190" width="520" height="18" rx="9" fill="#1b5e20" fill-opacity="0.12"/>
+  <text x="70" y="290" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="34" font-weight="800" fill="#1b5e20">Project 3</text>
+  <text x="70" y="335" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" fill="#0f1b10" fill-opacity="0.7">Placeholder image</text>
+</svg>
