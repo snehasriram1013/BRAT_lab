@@ -1,83 +1,86 @@
 <script lang="ts">
-	import Container from './Container.svelte';
-	import { contactInfo, site } from '$lib/content/site';
+    import Container from './Container.svelte';
+    import { contactInfo, site } from '$lib/content/site';
 </script>
 
 <footer class="footer">
-	<Container>
-		<div class="grid">
-			<div>
-				<p class="title">{site.labName}</p>
-				<p class="muted">{site.labFullName} · {site.institution}</p>
-				<p class="muted">Directed by {site.director}</p>
-			</div>
+    <Container>
+        <div class="grid">
+            <div>
+                <p class="title">{site.labName}</p>
+                <p class="muted">{site.labFullName} · {site.institution}</p>
+                <p class="muted">Directed by {site.director}</p>
+            </div>
 
-			<div>
-				<p class="title">Contact</p>
-				<p class="muted">
-					<a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-				</p>
-				<p class="muted">{contactInfo.addressLine1}</p>
-				<p class="muted">{contactInfo.addressLine2}</p>
-			</div>
+            <div>
+                <p class="title">Contact</p>
+                <p class="muted">
+                    <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+                </p>
+                <p class="muted">{contactInfo.addressLine1}</p>
+                <p class="muted">{contactInfo.addressLine2}</p>
+            </div>
 
-			<div>
-				<p class="title">Links</p>
-				<ul>
-					{#each contactInfo.socials as social}
-						<li><a href={social.href} rel="noreferrer" target="_blank">{social.label}</a></li>
-					{/each}
-				</ul>
-			</div>
-		</div>
+            <div>
+                <p class="title">Links</p>
+                <ul>
+                    {#each contactInfo.socials as social}
+                        <li><a href={social.href} rel="noreferrer" target="_blank">{social.label}</a></li>
+                    {/each}
+                </ul>
+            </div>
+        </div>
 
-		<p class="fineprint">
-			© {new Date().getFullYear()} {site.labName}. Placeholder content — replace with real lab information.
-		</p>
-	</Container>
+        <p class="fineprint">
+            © {new Date().getFullYear()} {site.labName}. Placeholder content — replace with real lab information.
+        </p>
+    </Container>
 </footer>
 
 <style>
-	.footer {
-		padding: 3rem 0 2.5rem;
-		border-top: 1px solid rgba(27, 94, 32, 0.18);
-		margin-top: 3rem;
-	}
+    .footer {
+        padding: 4rem 0 3rem;
+        border-top: 1px solid var(--color-border);
+        margin-top: 5rem;
+    }
 
-	.grid {
-		display: grid;
-		grid-template-columns: 1.2fr 1fr 0.8fr;
-		gap: 1.25rem;
-	}
+    .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 0.8fr;
+        gap: 2rem;
+    }
 
-	.title {
-		margin: 0 0 0.35rem;
-		font-weight: 800;
-		color: var(--color-primary-dark);
-	}
+    .title {
+        margin: 0 0 0.75rem;
+        font-weight: 600;
+        color: var(--color-text);
+        font-size: 0.95rem;
+    }
 
-	.muted {
-		margin: 0.25rem 0;
-		color: var(--color-muted);
-	}
+    .muted {
+        margin: 0.35rem 0;
+        color: var(--color-muted);
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
 
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: grid;
-		gap: 0.35rem;
-	}
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.5rem;
+    }
 
-	.fineprint {
-		margin: 2rem 0 0;
-		font-size: 0.9rem;
-		color: rgba(15, 27, 16, 0.65);
-	}
+    .fineprint {
+        margin: 3rem 0 0;
+        font-size: 0.85rem;
+        color: var(--color-muted);
+    }
 
-	@media (max-width: 860px) {
-		.grid {
-			grid-template-columns: 1fr;
-		}
-	}
+    @media (max-width: 860px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
